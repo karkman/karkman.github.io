@@ -497,18 +497,39 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
+        id: 'social-bluesky',
+        title: 'Bluesky',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://bsky.app/profile/anttikarkman.bsky.social", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%61%6E%74%74%69.%6B%61%72%6B%6D%61%6E@%68%65%6C%73%69%6E%6B%69.%66%69", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/karkman", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/antti-karkman-6b178098", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0003-0983-3319", "_blank");
         },
       },{
         id: 'social-rss',
@@ -522,7 +543,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=nNx1qgAAAAJ", "_blank");
         },
       },{
         id: 'social-custom_social',
