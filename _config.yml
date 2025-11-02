@@ -196,7 +196,6 @@ exclude:
   - _pages/blog.md
   - _pages/people.md
   - _pages/dropdown.md
-  - _pages/
   - _posts/
 keep_files:
   - CNAME
