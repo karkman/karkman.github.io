@@ -8,7 +8,7 @@ middle_name:
 last_name: Karkman
 contact_note: >
   Feel free to get in touch via email or connect on BlueSky or LinkedIn.
-description:  # the ">" symbol means to ignore newlines until "footer_text:"
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Researcher in environmental microbiology and antimicrobial resistance.
   Interested in microbial ecology, metagenomics, wastewater microbiology, and bioinformatics.
 footer_text: >
