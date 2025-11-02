@@ -194,7 +194,7 @@ exclude:
   - vendor
   - _news/
   - _pages/blog.md
-  - _pages/people.md
+  - _pages/profiles.md
   - _pages/dropdown.md
   - _posts/
 keep_files:
