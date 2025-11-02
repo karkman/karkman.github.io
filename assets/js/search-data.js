@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Links to course materials.",
+          description: "From this page you can find links to the materials of my courses. All course materials all licensed with a GPL-3.0 license.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
