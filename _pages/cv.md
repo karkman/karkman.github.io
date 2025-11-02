@@ -4,8 +4,8 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: My acedemic CV
+cv_pdf: cv_karkman.pdf # you can also use external links here
+description: Short verison of my CV. The ful lversion can be found from the PDF link
 toc:
   sidebar: left
 ---
