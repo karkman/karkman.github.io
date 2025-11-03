@@ -23,7 +23,7 @@
       }
     ]
   },
-  "Current employment": [
+  "work": [
     {
       "name": "University of Helsinki",
       "location": "Helsinki, FI",
@@ -31,8 +31,8 @@
       "position": "University lecturer",
       "url": "https://www.helsinki.fi/en",
       "startDate": "2023-08-01",
-      "endDate": "Present",
-      "summary": "Teaching and research in microbial bioinformatics."
+      "endDate": "",
+      "summary": "Teaching in microbial bioinformatics and research on the environmental dimensions of AMR."
     },
     {
       "name": "Aluke Ltd",  
@@ -41,11 +41,9 @@
       "position": "Microbiome expert",
       "url": "https://www.aluke.fi/",
       "startDate": "2019-01-01",
-      "endDate": "Present",
+      "endDate": "",
       "summary": "Aluke provides analysis and consultation services in microbial bioinformatics."
-    }
-  ],
-  "Past employment": [
+    },
     {
       "name": "University of Helsinki",
       "location": "Helsinki, FI",
@@ -54,7 +52,7 @@
       "url": "https://www.helsinki.fi/en",
       "startDate": "2022-01-01",
       "endDate": "2023-07-31",
-      "summary": "Research in microbial bioinformatics."
+      "summary": "Research on environmental AMR, especially related to sewage."
     },
     {
     "name": "University of Helsinki",
@@ -74,7 +72,7 @@
     "url": "https://www.gu.se/en",
     "startDate": "2016-01-01",
     "endDate": "2018-12-31",
-    "summary": "Post-doctoral researcher at University of Gothenburg."
+    "summary": "Post-doctoral position in the group of Joakim Larsson related to AMR and environment."
     },
     {
     "name": "University of Helsinki",
@@ -84,7 +82,7 @@
     "url": "https://www.helsinki.fi/en",
     "startDate": "2015-09-16",
     "endDate": "2016-12-31",
-    "summary": "Project on the interplay of living environment, microbiota, and non-communicable diseases."
+    "summary": "Post-doctoral position on a project about the interplay of living environment, microbiota, and non-communicable diseases."
     },
     {
     "name": "University of Helsinki",
@@ -94,7 +92,7 @@
     "url": "https://www.helsinki.fi/en",
     "startDate": "2007-07-01",
     "endDate": "2015-09-15",
-    "summary": "PhD project on antibiotic resistance"
+    "summary": "PhD project on antibiotic resistance mainly in sewage."
     }
   ],
   "education": [
@@ -102,7 +100,16 @@
       "institution": "University of Helsinki",
       "url": "https://www.helsinki.fi/en",
       "area": "Microbiology",
-      "studyType": "PhD",
+      "studyType": "Title of Docent",
+      "startDate": "",
+      "endDate": "2021-08-24",
+      "score": ""
+    },
+    {
+      "institution": "University of Helsinki",
+      "url": "https://www.helsinki.fi/en",
+      "area": "Microbiology",
+      "studyType": "PhD (in Finnish: MMT)",
       "startDate": "2007-07-01",
       "endDate": "2015-09-15",
       "score": "Pass with distinction"
@@ -111,7 +118,7 @@
       "institution": "University of Helsinki",
       "url": "https://www.helsinki.fi/en",
       "area": "Microbiology",
-      "studyType": "MSc",
+      "studyType": "MSc (in Finnish: MMM)",
       "startDate": "2002-09-01",
       "endDate": "2007-07-01",
       "score": "" 
