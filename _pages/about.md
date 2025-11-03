@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 
 scholar:
   sort_by: year
-  order: ascending  # can be either "ascending" or "descending"
+  order: descending  # can be either "ascending" or "descending"
 
 announcements:
   enabled: false # includes a list of news items
