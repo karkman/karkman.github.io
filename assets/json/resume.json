@@ -31,7 +31,7 @@
       "position": "University lecturer",
       "url": "https://www.helsinki.fi/en",
       "startDate": "2023-08-01",
-      "endDate": "",
+      "endDate": " ",
       "current": true,
       "summary": "Teaching in microbial bioinformatics and research on the environmental dimensions of AMR."
     },
@@ -39,10 +39,10 @@
       "name": "Aluke Ltd",  
       "location": "Helsinki, FI",
       "description": "Co-founder",
-      "position": "Microbiome expert",
+      "position": "Co-founder & Microbiome expert",
       "url": "https://www.aluke.fi/",
       "startDate": "2019-01-01",
-      "endDate": "",
+      "endDate": " ",
       "current": true,
       "summary": "Aluke provides analysis and consultation services in microbial bioinformatics."
     },
