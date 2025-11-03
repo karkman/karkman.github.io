@@ -32,12 +32,7 @@
       "url": "https://www.helsinki.fi/en",
       "startDate": "2023-08-01",
       "endDate": "Present",
-      "summary": "Teaching and research in microbial bioinformatics.",
-      "highlights": [
-        "",
-        "",
-        ""
-      ]
+      "summary": "Teaching and research in microbial bioinformatics."
     },
     {
       "name": "University of Helsinki",
@@ -47,14 +42,9 @@
       "url": "https://www.helsinki.fi/en",
       "startDate": "2022-01-01",
       "endDate": "2023-07-31",
-      "summary": "Research in microbial bioinformatics.",
-      "highlights": [
-        "",
-        "",
-        ""
-      ]
+      "summary": "Research in microbial bioinformatics."
     },
-  {
+    {
     "name": "University of Helsinki",
     "location": "Helsinki, FI",
     "description": "Post-doctoral researcher",
@@ -62,14 +52,9 @@
     "url": "https://www.helsinki.fi/en",
     "startDate": "2019-01-01",
     "endDate": "2021-12-31",
-    "summary": "Research COuncil of Finland funded post-doctoral project on antibiotic resistance",
-    "highlights": [
-      "",
-      "",
-      ""
-    ]
-  },
-  {
+    "summary": "Research Council of Finland funded post-doctoral project on antibiotic resistance"
+    },
+    {
     "name": "University of Gothenburg",
     "location": "Gothenburg, SE",
     "description": "Post-doctoral researcher",
@@ -77,14 +62,9 @@
     "url": "https://www.gu.se/en",
     "startDate": "2016-01-01",
     "endDate": "2018-12-31",
-    "summary": "",
-    "highlights": [
-      "",
-      "",
-      ""
-    ]
-  },
-  {
+    "summary": "Post-doctoral researcher at University of Gothenburg."
+    },
+    {
     "name": "University of Helsinki",
     "location": "Helsinki, FI",
     "description": "Post-doctoral researcher",
@@ -92,14 +72,9 @@
     "url": "https://www.helsinki.fi/en",
     "startDate": "2015-09-16",
     "endDate": "2016-12-31",
-    "summary": "Project on the interplay of living environment, microbiota, and non-communicable diseases.",
-    "highlights": [
-      "",
-      "",
-      ""
-    ]
-  },
-  {
+    "summary": "Project on the interplay of living environment, microbiota, and non-communicable diseases."
+    },
+    {
     "name": "University of Helsinki",
     "location": "Helsinki, FI",
     "description": "PhD student",
@@ -107,13 +82,8 @@
     "url": "https://www.helsinki.fi/en",
     "startDate": "2007-07-01",
     "endDate": "2015-09-15",
-    "summary": "PhD project on antibiotic resistance",
-    "highlights": [
-      "",
-      "",
-      ""
-    ]
-  }
+    "summary": "PhD project on antibiotic resistance"
+    }
   ],
   "education": [
     {
@@ -124,9 +94,6 @@
       "startDate": "2007-07-01",
       "endDate": "2015-09-15",
       "score": "Pass with distinction",
-      "courses": [
-        ""
-      ]
     },
     {
       "institution": "University of Helsinki",
@@ -135,23 +102,10 @@
       "studyType": "MSc",
       "startDate": "2002-09-01",
       "endDate": "2007-07-01",
-      "score": "",
-      "courses": [
-        ""
-      ]
-    }
-  ],
-  "awards": [
-    {
+      "score": "" 
     }
   ],
   "publications": [
-    {
-    }
-  ],
-  "skills": [
-    {
-    },
     {
     }
   ],
@@ -168,9 +122,6 @@
   "interests": [
     {
      }
-  ],
-  "references": [
-    {}
   ],
   "projects": [
     {
