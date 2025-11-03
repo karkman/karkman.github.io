@@ -23,7 +23,7 @@
       }
     ]
   },
-  "work": [
+  "Current employment": [
     {
       "name": "University of Helsinki",
       "location": "Helsinki, FI",
@@ -43,7 +43,9 @@
       "startDate": "2019-01-01",
       "endDate": "Present",
       "summary": "Aluke provides analysis and consultation services in microbial bioinformatics."
-    },
+    }
+  ],
+  "Past employment": [
     {
       "name": "University of Helsinki",
       "location": "Helsinki, FI",
