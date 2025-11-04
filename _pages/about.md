@@ -32,4 +32,7 @@ latest_posts:
 ---
 
 I am a computational microbiologist and university lecturer in microbial bioinformatics at the University of Helsinki. I'm also one of the founders of [Aluke](https://www.aluke.fi).  
-These are my academic websites where you can find my publications, CV and some details about my projects.  
+
+My research focuses on how bacteria develop resistance to antibiotics. My work involves studying the genes behind this resistance and how they can move between bacteria, using computational tools to better understand these processes. You can find more information about my projects under [Projects](_pages/projects.md) and some example of the workflows under [Repositories](_pages/repositories.md).  
+In addition to research, I enjoy teaching and creating educational materials that help others learn bioinformatics and microbiology in a clear and practical way. I aim to make complex scientific ideas easier to understand and to support students and colleagues in their learning journeys. Learn more about my teaching under [Teaching](_pages/teaching.md).  
+
