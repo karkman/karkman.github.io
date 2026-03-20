@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 3009</p>  
+    <p>Room 3216</p>  
     <p>Biocenter 1, Viikki</p>  
     <p>Helsinki, Finland</p>  
 
