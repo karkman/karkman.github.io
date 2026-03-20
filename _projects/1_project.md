@@ -1,8 +1,8 @@
 ---
 layout: page
-title: test project
-description: just for testing
-img: assets/img/12.jpg
+title: From Clay to Code
+description: Investigating Microbial Evolution in Response to Human Influence
+img: assets/img/clay2code.png
 importance: 1
 category: work
 related_publications: true
