@@ -12,4 +12,3 @@ Microbes have long been controlled with bioactive chemicals, but this has contri
 
 This project aims to establish a scientific foundation for investigating viable ancient bacteria recovered from archaeological ceramics. Building on our developed method for reviving dormant microbial cells, we will determine the evolutionary trajectories of the isolated taxa. The generated knowledge will provide the basis for subsequent analyses of ancient microbiomes and experimental validation of microbial adaptation mechanisms over time.  
 
-{% endraw %}
