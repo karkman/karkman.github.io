@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: UNDER CONSTRUCTION
+description: A selection of my projects. You can find more information about each project by clicking on the cards below.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 
