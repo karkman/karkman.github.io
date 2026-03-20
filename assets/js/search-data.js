@@ -60,9 +60,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-test-project",
-          title: 'test project',
-          description: "just for testing",
+            },},{id: "projects-from-clay-to-code",
+          title: 'From Clay to Code',
+          description: "Investigating Microbial Evolution in Response to Human Influence",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
