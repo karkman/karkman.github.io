@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE"
-img: assets/img/amarone-png
+img: assets/img/amarone.png
 date: 2026-09-01 # Used to sort projects (YYYY-MM-DD). Newest dates appear first.
 grant_period: "2026 - 2030"
 funder: "Research Council of Finland"

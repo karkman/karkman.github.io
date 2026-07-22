@@ -20,7 +20,17 @@ nav_order: 3
         {% if project.funder %}
         <div><strong>Funder:</strong> {{ project.funder }}</div>
         {% endif %}
-        {% if project.people_involved %}
+        {% if project.team %}
+        <div style="margin-top: 5px;">
+          <strong>Team:</strong>
+          <ul style="margin-bottom: 0; padding-left: 20px;">
+            {% if project.team.pi %}<li><em>PIs:</em> {{ project.team.pi }}</li>{% endif %}
+            {% if project.team.postdocs %}<li><em>Postdocs:</em> {{ project.team.postdocs }}</li>{% endif %}
+            {% if project.team.phd_students %}<li><em>PhD students:</em> {{ project.team.phd_students }}</li>{% endif %}
+            {% if project.team.undergrads %}<li><em>Undergrads:</em> {{ project.team.undergrads }}</li>{% endif %}
+          </ul>
+        </div>
+        {% elsif project.people_involved %}
         <div><strong>People Involved:</strong> {{ project.people_involved }}</div>
         {% endif %}
       </div>
