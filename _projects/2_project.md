@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: none
 title: "Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE"
 img: assets/img/amarone.png
 date: 2026-09-01 

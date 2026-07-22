@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: none
 title: From Clay to Code: Investigating Microbial Evolution in Response to Human Influence
 img: assets/img/clay2code.png
 date: 2026-01-01

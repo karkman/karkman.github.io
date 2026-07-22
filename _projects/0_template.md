@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: none
 title: "Project Title"
 img: assets/img/your-graphical-abstract.png
 date: 2024-01-01 # Used to sort projects (YYYY-MM-DD). Newest dates appear first.
