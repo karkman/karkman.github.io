@@ -2,64 +2,41 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A selection of my projects. You can find more information about each project by clicking on the cards below.
+description: 
 nav: true
 nav_order: 3
-display_categories: [work]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% for project in sorted_projects %}
+    <div class="project-entry" style="margin-bottom: 60px;">
+      <h2>{{ project.title }}</h2>
+      
+      <div class="project-meta" style="margin-bottom: 20px; font-size: 0.95rem; color: var(--global-text-color-light);">
+        {% if project.grant_period %}
+        <div><strong>Grant Period:</strong> {{ project.grant_period }}</div>
+        {% endif %}
+        {% if project.funder %}
+        <div><strong>Funder:</strong> {{ project.funder }}</div>
+        {% endif %}
+        {% if project.people_involved %}
+        <div><strong>People Involved:</strong> {{ project.people_involved }}</div>
+        {% endif %}
+      </div>
+
+      {% if project.img %}
+        <div class="project-img" style="margin-bottom: 20px;">
+          <img src="{{ project.img | relative_url }}" alt="Graphical abstract for {{ project.title }}" class="img-fluid rounded z-depth-1" style="max-height: 400px; width: auto;">
+        </div>
+      {% endif %}
+      
+      <div class="project-content">
+        {{ project.content }}
+      </div>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+    {% unless forloop.last %}
+      <hr style="margin-bottom: 60px;">
+    {% endunless %}
   {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>
