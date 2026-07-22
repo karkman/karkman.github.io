@@ -10,25 +10,24 @@
     - institution: University of Helsinki
       year: -
       description: Title of Docent
--work:
-  - title: Professional Experience
-    type: time_table
-    contents:
-      - institution: University of Helsinki
-        year: 2023-
-        description: University lecturer in microbial bioinformatics
-      - institution: Aluke Ltd
-        year: 2023-
-        description: Co-founder & Microbiome expert
-      - institution: University of Helsinki
-        year: 2022-2023
-        description: Research on environmental AMR
-      - institution: University of Helsinki
-        year: 2019-2021
-        description: Post-doc on antibiotic resistance
-      - institution: University of Gothenburg
-        year: 2016-2018
-        description: Post-doc in Joakim Larsson's group
-      - institution: University of Helsinki
-        year: 2007-2015
-        description: PhD on antibiotic resistance in sewage
+- title: Work
+  type: time_table
+  contents:
+    - institution: University of Helsinki
+      year: 2023-
+      description: University lecturer in microbial bioinformatics
+    - institution: Aluke Ltd
+      year: 2023-
+      description: Co-founder & Microbiome expert
+    - institution: University of Helsinki
+      year: 2022-2023
+      description: Research on environmental AMR
+    - institution: University of Helsinki
+      year: 2019-2021
+      description: Post-doc on antibiotic resistance
+    - institution: University of Gothenburg
+      year: 2016-2018
+      description: Post-doc in Joakim Larsson's group
+    - institution: University of Helsinki
+      year: 2007-2015
+      description: PhD on antibiotic resistance in sewage
