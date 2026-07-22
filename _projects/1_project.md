@@ -1,15 +1,11 @@
 ---
 layout: page
-title: From Clay to Code
-description: Investigating Microbial Evolution in Response to Human Influence
+title: From Clay to Code: Investigating Microbial Evolution in Response to Human Influence
 img: assets/img/clay2code.png
-importance: 1
-category: work
-related_publications: true
-date: 2024-01-01
-grant_period: "2024 - 2028"
-funder: "Example Funder"
-people_involved: "Antti Karkman, Jane Doe, John Smith"
+date: 2026-01-01
+grant_period: "2026 - 2027"
+funder: "HiLIFE, Univeristy of Helsinki"
+people_involved: "Antti Karkman"
 ---
 
 Microbes have long been controlled with bioactive chemicals, but this has contributed to rising threats such as antimicrobial resistance. While microbes naturally adapt—often to our disadvantage—these adaptations can also inform new strategies against microbial threats. By analyzing ancient microbes preserved in archaeological ceramics and comparing their genomes to modern relatives, we can uncover how human activities have shaped microbial evolution over time.  
