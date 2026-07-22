@@ -1,15 +1,18 @@
 ---
 layout: none
-title: "Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE"
-img: assets/img/amarone.png
-date: 2026-09-01 
-grant_period: "2026 - 2030"
-funder: "Research Council of Finland"
+title: "From Clay to Code: Investigating Microbial Evolution in Response to Human Influence"
+img: assets/img/clay2code.png
+date: 2026-01-01
+description: "Analyzing ancient microbes preserved in archaeological ceramics to uncover how human activities have shaped microbial evolution over time."
+grant_period: "2026 - 2027"
+funder: "HiLIFE, University of Helsinki"
 team:
-  pi: "Antti Karkman"
-  postdocs: ""
+  pi: "Johanna Muurinen, Antti Karkman"
+  postdocs: "Juliana Botero Cadorna"
   phd_students: ""
   undergrads: ""
 ---
 
-This project uses publicly available long-read metagenomes to identify putatively mobile latent antibiotic resistance genes and to determine their movement within microbial communities across human, animal, and environmental reservoirs. By capturing full-length ARGs together with their flanking mobile genetic elements and host genomes, AMaRONE aims to identify high-risk resistance genes before they become established clinical threats. Phenotypic assays are used to confirm resistance conferred by selected genes, and the project develops proof-of-concept mitigation strategies, including molecular tools targeting mobility and expression of these determinants. The results will inform One Health–oriented environmental surveillance and proactive management of antimicrobial resistance.
+Microbes have long been controlled with bioactive chemicals, but this has contributed to rising threats such as antimicrobial resistance. While microbes naturally adapt—often to our disadvantage—these adaptations can also inform new strategies against microbial threats. By analyzing ancient microbes preserved in archaeological ceramics and comparing their genomes to modern relatives, we can uncover how human activities have shaped microbial evolution over time.  
+
+This project aims to establish a scientific foundation for investigating viable ancient bacteria recovered from archaeological ceramics. Building on our developed method for reviving dormant microbial cells, we will determine the evolutionary trajectories of the isolated taxa. The generated knowledge will provide the basis for subsequent analyses of ancient microbiomes and experimental validation of microbial adaptation mechanisms over time.

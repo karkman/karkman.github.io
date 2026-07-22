@@ -24,10 +24,10 @@ nav_order: 3
         <div style="margin-top: 5px;">
           <strong>Team:</strong>
           <ul style="margin-bottom: 0; padding-left: 20px;">
-            {% if project.team.pi %}<li><em>PIs:</em> {{ project.team.pi }}</li>{% endif %}
-            {% if project.team.postdocs %}<li><em>Postdocs:</em> {{ project.team.postdocs }}</li>{% endif %}
-            {% if project.team.phd_students %}<li><em>PhD students:</em> {{ project.team.phd_students }}</li>{% endif %}
-            {% if project.team.undergrads %}<li><em>Undergrads:</em> {{ project.team.undergrads }}</li>{% endif %}
+            {% if project.team.pi %}<li>PIs: <strong>{{ project.team.pi }}</strong></li>{% endif %}
+            {% if project.team.postdocs %}<li>Postdocs: <strong>{{ project.team.postdocs }}</strong></li>{% endif %}
+            {% if project.team.phd_students %}<li>PhD students: <strong>{{ project.team.phd_students }}</strong></li>{% endif %}
+            {% if project.team.undergrads %}<li>Undergrads: <strong>{{ project.team.undergrads }}</strong></li>{% endif %}
           </ul>
         </div>
         {% elsif project.people_involved %}
