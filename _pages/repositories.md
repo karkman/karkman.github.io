@@ -7,41 +7,41 @@ nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+## GitHub Profile
 
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
+<div class="repo p-2 text-center">
+  <a href="https://github.com/karkman" target="_blank">
+    <i class="fa-brands fa-github fa-3x"></i>
+    <h6 class="mt-2">github.com/karkman</h6>
+  </a>
 </div>
 
 ---
 
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
+## Repositories
 
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="row row-cols-1 row-cols-md-3 mt-3">
   {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
+    {% assign repo_url = repo | split: '/' %}
+    {% assign description = site.data.repositories.repo_descriptions[repo] %}
+    <div class="col mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="https://github.com/{{ repo }}" target="_blank">
+              <i class="fa-brands fa-github"></i> {{ repo_url[1] }}
+            </a>
+          </h5>
+          {% if description %}
+            <p class="card-text text-muted">{{ description }}</p>
+          {% endif %}
+          <p class="card-text">
+            <a href="https://github.com/{{ repo }}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+              View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>
-{% endif %}

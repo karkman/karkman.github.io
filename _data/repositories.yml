@@ -1,11 +1,16 @@
 github_users:
   - karkman
 
-repo_description_lines_max: 2
-
 github_repos:
   - karkman/MMB-114_Genomics
   - karkman/MMB-901_Metagenomics
   - karkman/MMB-117_EnvironmentalMicrobiology
   - karkman/crAssphage_project
   - karkman/GlobalSewage
+
+repo_descriptions:
+  karkman/MMB-114_Genomics: "Whole genome analysis teaching for the course 'MMB-114 Exploratory microbial research - lab course' of the University of Helsinki."
+  karkman/MMB-901_Metagenomics: "MMB-901 metagenomics course repository"
+  karkman/MMB-117_EnvironmentalMicrobiology: "Course repository for Environmental microbiology course (MMB-117) at the University of Helsinki."
+  karkman/crAssphage_project: "Source code for the crAssphage project"
+  karkman/GlobalSewage: "Data analysis for Global Sewage project"

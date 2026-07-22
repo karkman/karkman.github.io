@@ -19,7 +19,7 @@
       {
         "network": "BlueSky",
         "username": "anttikarkman",
-        "url": "https://bsky.app/profile/bsky.app"
+        "url": "https://bsky.app/profile/anttikarkman"
       }
     ]
   },
@@ -126,10 +126,7 @@
       "score": "" 
     }
   ],
-  "publications": [
-    {
-    }
-  ],
+  "publications": [],
   "languages": [
     {
       "language": "Finnish",
@@ -140,14 +137,8 @@
       "fluency": "Fluent"
     }
   ],
-  "interests": [
-    {
-     }
-  ],
-  "projects": [
-    {
-      }
-  ],
+  "interests": [],
+  "projects": [],
   "meta": {
     "version": "1.0.0",
     "lastModified": "2025-10-03"

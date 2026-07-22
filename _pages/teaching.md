@@ -22,11 +22,12 @@ Courses for PhD students on microbial bioinformatics.
 
 ### Current courses
 
-- [MBDP Metagenomics 2024, University of Helsinki, Finland](http://github.com/MBDP-bioinformatics-courses/MBDP_Metagenomics_2024)
+- [MBDP Metagenomics 2026, University of Helsinki, Finland](http://github.com/MBDP-bioinformatics-courses/MBDP_Metagenomics_2026)
 - [MBDP Genomics 2024, University of Helsinki, Finland](https://github.com/MBDP-bioinformatics-courses/MBDP_Genomics_2024)
 
 ### Past course
 
+- [MBDP Metagenomics 2024, University of Helsinki, Finland](http://github.com/MBDP-bioinformatics-courses/MBDP_Metagenomics_2024)
 - [Microbiome Summer School 2024, Turku, Finland](https://github.com/karkman/MicrobiomeSummerSchool2024)
 - [Environmental Metagenomics 2023, Physalia, online](https://github.com/karkman/Physalia_EnvMetagenomics_2023)
 - [Environmental Metagenomics 2022, Physalia, online](https://github.com/karkman/Physalia_EnvMetagenomics_2022)
