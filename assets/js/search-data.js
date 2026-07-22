@@ -44,11 +44,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "projects-from-clay-to-code",
-          title: 'From Clay to Code',
-          description: "Investigating Microbial Evolution in Response to Human Influence",
+        },{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-risks-and-mitigation-of-antimicrobial-resistance-across-one-health-sectors-amarone",
+          title: 'Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-bluesky',
         title: 'Bluesky',
