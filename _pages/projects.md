@@ -8,7 +8,7 @@ nav_order: 3
 ---
 
 <div class="projects">
-  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% assign sorted_projects = site.projects | where_exp: "p", "p.published != false" | sort: "date" | reverse %}
   {% for project in sorted_projects %}
     <div class="project-entry" style="margin-bottom: 60px;">
       <h2>{{ project.title }}</h2>
