@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Univeristy lecturer in microbial bioinformatics, PhD in microbiology
+subtitle: University lecturer in microbial bioinformatics, PhD in microbiology
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>Biocenter 1, Viikki</p>  
     <p>Helsinki, Finland</p>  
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_papers: true # includes a list of the 4 most recent papers
 social: true # includes social icons at the bottom of the page
 
 scholar:
