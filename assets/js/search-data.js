@@ -44,16 +44,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "projects-",
-          title: '',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-risks-and-mitigation-of-antimicrobial-resistance-across-one-health-sectors-amarone",
-          title: 'Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE',
-          description: "",
+        },{id: "projects-from-clay-to-code-investigating-microbial-evolution-in-response-to-human-influence",
+          title: 'From Clay to Code: Investigating Microbial Evolution in Response to Human Influence',
+          description: "Analyzing ancient microbes preserved in archaeological ceramics to uncover how human activities have shaped microbial evolution over time.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-risks-and-mitigation-of-antimicrobial-resistance-across-one-health-sectors-amarone",
+          title: 'Risks and Mitigation of Antimicrobial Resistance Across One Health Sectors – AMaRONE',
+          description: "Using publicly available long-read metagenomes to identify mobile antibiotic resistance genes and develop mitigation strategies across human, animal, and environmental reservoirs.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
             },},{
         id: 'social-bluesky',
         title: 'Bluesky',
