@@ -130,6 +130,8 @@ layout: default
               <div>
                 {% if entry.type == 'list' %}
                   {% include cv/list.liquid %}
+                {% elsif entry.type == 'list_raw' %}
+                  {% include cv/list_raw.liquid %}
                 {% elsif entry.type == 'time_table' %}
                   {% include cv/time_table.liquid %}
                 {% elsif entry.type == 'nested_list' %}

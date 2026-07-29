@@ -1,0 +1,29 @@
+name: Update CV Metrics
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Run automatically on the 1st of every month
+  workflow_dispatch: # Allow manual trigger from the GitHub Actions tab
+
+jobs:
+  update-cv-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run metrics update script
+        run: python bin/update_cv_metrics.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/cv_metrics.yaml
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: Update CV metrics" && git push)
