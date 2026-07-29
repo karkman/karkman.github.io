@@ -32,4 +32,4 @@ Courses for PhD students on microbial bioinformatics.
 - [Environmental Metagenomics 2023, Physalia, online](https://github.com/karkman/Physalia_EnvMetagenomics_2023)
 - [Environmental Metagenomics 2022, Physalia, online](https://github.com/karkman/Physalia_EnvMetagenomics_2022)
 - [Metagenomics 2021, University of Helsinki, Finland](https://github.com/karkman/Metagenomics2021)
-- [Metagenome Course 2019, Unievrsity of Helsinki, Finland](https://github.com/karkman/MetagenomeCourse2019)
+- [Metagenome Course 2019, University of Helsinki, Finland](https://github.com/karkman/MetagenomeCourse2019)
