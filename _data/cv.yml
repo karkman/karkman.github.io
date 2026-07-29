@@ -45,12 +45,12 @@
   contents:
     - title: Scholar Metrics
       year: "2026"
-      description: "h-index: 27 | i10-index: 36 | Total citations: 6758+"
+      description: "h-index: 26 | Total citations: 5736+"
 - title: CV Documentation
   type: list_raw
   contents:
-    - "Full CV (PDF) — Updated July 2026 — 12 pages | <a href='/assets/pdf/karkman_cv_2026.pdf' target='_blank'><i class='fa-solid fa-file-pdf'></i> Download</a>"
-    - "Google Scholar Profile — Citations & metrics | <a href='https://scholar.google.com/citations?user=YOUR_ID' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View</a>"
+    - "Full CV (PDF) — Updated July 2026 — 3 pages | <a href='https://microbiology.fi/assets/pdf/cv_karkman.pdf' target='_blank'><i class='fa-solid fa-file-pdf'></i> Download</a>"
+    - "Google Scholar Profile — Citations & metrics | <a href='https://scholar.google.com/citations?user=inNx1qgAAAAJ' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View</a>"
     - "ORCID Profile — Complete publication record | <a href='https://orcid.org/0000-0003-0983-3319' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View</a>"
     - "Research.fi — Finnish research portal | <a href='https://research.fi/en/results/person/0000-0003-0983-3319' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View</a>"
     - "University of Helsinki — Research portal | <a href='https://researchportal.helsinki.fi/fi/persons/antti-karkman/' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View</a>"

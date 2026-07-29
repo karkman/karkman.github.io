@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-Fetch CV metrics from ORCID and OpenAlex APIs.
+Fetch CV metrics from ORCID and Scopus APIs.
 Updates _data/cv.yml with live counts.
+
+Sources:
+- ORCID: works count, DOI count (free, no auth)
+- Scopus: h-index, citations, document count (requires API key)
 """
 
 import json
@@ -12,6 +16,8 @@ import urllib.request
 from datetime import datetime
 
 ORCID_ID = "0000-0003-0983-3319"
+SCOPUS_AUTHOR_ID = "36774714200"
+SCOPUS_API_KEY = os.environ.get("SCOPUS_API_KEY", "")
 CV_FILE = os.path.join(os.path.dirname(__file__), "..", "_data", "cv.yml")
 
 
@@ -35,26 +41,25 @@ def count_dois(data):
     return dois
 
 
-def fetch_openalex_metrics():
-    """Fetch metrics from OpenAlex API."""
-    url = f"https://api.openalex.org/authors?filter=orcid:{ORCID_ID}"
+def fetch_scopus_metrics():
+    """Fetch metrics from Scopus API."""
+    url = f"https://api.elsevier.com/content/author?author_id={SCOPUS_AUTHOR_ID}&apiKey={SCOPUS_API_KEY}&httpAccept=application/json&field=h-index,citation-count,document-count,cited-by-count"
     req = urllib.request.Request(url, headers={"Accept": "application/json"})
     with urllib.request.urlopen(req) as response:
         data = json.loads(response.read().decode())
 
-    author = data.get("results", [{}])[0]
-    stats = author.get("summary_stats", {})
+    author = data.get("author-retrieval-response", [{}])[0]
+    coredata = author.get("coredata", {})
 
     return {
-        "works_count": author.get("works_count", 0),
-        "cited_by_count": author.get("cited_by_count", 0),
-        "h_index": stats.get("h_index", 0),
-        "i10_index": stats.get("i10_index", 0),
-        "openalex_url": author.get("id", ""),
+        "h_index": int(author.get("h-index", 0)),
+        "citation_count": int(coredata.get("citation-count", 0)),
+        "document_count": int(coredata.get("document-count", 0)),
+        "cited_by_count": int(coredata.get("cited-by-count", 0)),
     }
 
 
-def update_cv_yml(orcid_works, doi_count, openalex):
+def update_cv_yml(orcid_works, doi_count, scopus):
     """Update _data/cv.yml with live metrics."""
     with open(CV_FILE, "r") as f:
         content = f.read()
@@ -66,9 +71,9 @@ def update_cv_yml(orcid_works, doi_count, openalex):
     replacement = rf'\g<1>{year}\g<2>\n\g<3>{orcid_works} works | {doi_count} DOIs | \g<4>\g<5>'
     content = re.sub(pattern, replacement, content)
 
-    # Update Scholar Metrics line with OpenAlex data
-    pattern = r'(- title: Scholar Metrics\n\s+year: ")\d+(")\n(\s+description: "h-index: )\d+( \| i10-index: )\d+( \| Total citations: )[\d,]+\+?'
-    replacement = rf'\g<1>{year}\g<2>\n\g<3>{openalex["h_index"]}\g<4>{openalex["i10_index"]}\g<5>{openalex["cited_by_count"]}+'
+    # Update Scholar Metrics line with Scopus data
+    pattern = r'(- title: Scholar Metrics\n\s+year: ")\d+(")\n(\s+description: "h-index: )\d+( \| Total citations: )[\d,]+\+?'
+    replacement = rf'\g<1>{year}\g<2>\n\g<3>{scopus["h_index"]}\g<4>{scopus["citation_count"]}+'
     content = re.sub(pattern, replacement, content)
 
     with open(CV_FILE, "w") as f:
@@ -76,7 +81,7 @@ def update_cv_yml(orcid_works, doi_count, openalex):
 
     print(f"Updated metrics:")
     print(f"  ORCID: {orcid_works} works, {doi_count} DOIs")
-    print(f"  OpenAlex: h-index={openalex['h_index']}, citations={openalex['cited_by_count']}")
+    print(f"  Scopus: h-index={scopus['h_index']}, citations={scopus['citation_count']}")
 
 
 def main():
@@ -86,13 +91,13 @@ def main():
     dois = count_dois(orcid_data)
     doi_count = len(dois)
 
-    print(f"Fetching OpenAlex metrics...")
-    openalex = fetch_openalex_metrics()
+    print(f"Fetching Scopus metrics...")
+    scopus = fetch_scopus_metrics()
 
     print(f"ORCID: {works_count} works, {doi_count} DOIs")
-    print(f"OpenAlex: {openalex}")
+    print(f"Scopus: {scopus}")
 
-    update_cv_yml(works_count, doi_count, openalex)
+    update_cv_yml(works_count, doi_count, scopus)
 
 
 if __name__ == "__main__":
