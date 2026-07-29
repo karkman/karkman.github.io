@@ -72,8 +72,8 @@ def update_cv_yml(orcid_works, doi_count, scopus):
     content = re.sub(pattern, replacement, content)
 
     # Update Scholar Metrics line with Scopus data
-    pattern = r'(- title: Scholar Metrics\n\s+year: ")\d+(")\n(\s+description: "h-index: )\d+( \| Total citations: )[\d,]+\+?'
-    replacement = rf'\g<1>{year}\g<2>\n\g<3>{scopus["h_index"]}\g<4>{scopus["citation_count"]}+'
+    pattern = r'(- title: Scopus\n\s+year: ")\d+(")\n(\s+description: "h-index: )\d+( \| Total citations: )[\d,]+\+?(\| <a href=.)'
+    replacement = rf'\g<1>{year}\g<2>\n\g<3>{scopus["h_index"]}\g<4>{scopus["citation_count"]}+\5'
     content = re.sub(pattern, replacement, content)
 
     with open(CV_FILE, "w") as f:
