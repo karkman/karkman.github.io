@@ -11,9 +11,14 @@ nav_order: 6
 
 Courses for the master's program in [Microbiology and Microbial Biotechnology (MMB)](https://www.helsinki.fi/en/degree-programmes/microbiology-and-microbial-biotechnology-masters-programme) at the [University of Helsinki](https://www.helsinki.fi/).
 
-- [Bacterial genomics, MMB-114](https://github.com/karkman/MMB-114_Genomics)
-- [Environmental microbiology, MMB-117](https://github.com/karkman/MMB-117_EnvironmentalMicrobiology)
-- [Microbial metagenomics, MMB-901](https://github.com/karkman/MMB-901_Metagenomics)
+- [Bacterial genomics, MMB-114](https://github.com/karkman/MMB-114_Genomics)  
+  *Introduction to bacterial genome analysis, covering sequencing technologies, annotation pipelines, and comparative genomics. Focus on practical applications in microbial research through bioinformatics projects.*
+
+- [Environmental microbiology, MMB-117](https://github.com/karkman/MMB-117_EnvironmentalMicrobiology)  
+  *Amplicon-based analysis course combining laboratory work and bioinformatics. Covers 16S/ITS amplicon sequencing from sample processing to data analysis, with foundational microbial ecology concepts.*
+
+- [Microbial metagenomics, MMB-901](https://github.com/karkman/MMB-901_Metagenomics)  
+  *Advanced metagenomics course covering both read-based and assembly-based analytical approaches. Focus on computational methods for functional and taxonomic characterization of microbial communities from sequencing data.*
 
 
 ## PhD courses
