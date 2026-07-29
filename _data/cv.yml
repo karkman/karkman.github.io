@@ -43,9 +43,9 @@
 - title: Impact Metrics
   type: time_table
   contents:
-    - title: Scopus
+    - title: Scholar Metrics
       year: "2026"
-      description: "h-index: 26 | Total citations: 5736+ | <a href='https://www.scopus.com/authid/detail.uri?authorId=36774714200' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View profile</a>"
+      description: "h-index: 27 | Total citations: 6758+ | <a href='https://openalex.org/A5055169624' target='_blank'><i class='fa-solid fa-external-link-alt'></i> View profile</a>"
 - title: External Links
   type: list_raw
   contents:

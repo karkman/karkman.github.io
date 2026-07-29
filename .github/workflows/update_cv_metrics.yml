@@ -19,8 +19,6 @@ jobs:
 
       - name: Run metrics update script
         run: python bin/update_cv_metrics.py
-        env:
-          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
 
       - name: Commit and push changes
         run: |
