@@ -121,6 +121,26 @@ layout: default
             </div>
           </div>
         {% endfor %}
+
+        {% for entry in site.data.cv %}
+          {% unless entry.title == 'Education' or entry.title == 'Work' %}
+            <a class="anchor" id="{{ entry.title }}"></a>
+            <div class="card mt-3 p-3">
+              <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+              <div>
+                {% if entry.type == 'list' %}
+                  {% include cv/list.liquid %}
+                {% elsif entry.type == 'time_table' %}
+                  {% include cv/time_table.liquid %}
+                {% elsif entry.type == 'nested_list' %}
+                  {% include cv/nested_list.liquid %}
+                {% else %}
+                  {{ entry.contents }}
+                {% endif %}
+              </div>
+            </div>
+          {% endunless %}
+        {% endfor %}
       </div>
     </article>
   </div>
