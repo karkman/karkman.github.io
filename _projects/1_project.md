@@ -9,7 +9,7 @@ funder: "Research Council of Finland"
 team:
   pi: "Antti Karkman"
   postdocs: ""
-  phd_students: ""
+  phd_students: "Nugrah Fadillah"
   undergrads: ""
 ---
 
