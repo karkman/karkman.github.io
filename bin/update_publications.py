@@ -48,44 +48,20 @@ for doi, work_type in doi_to_type.items():
         req = urllib.request.Request(f"https://api.crossref.org/works/{doi}/transform/application/x-bibtex")
         with urllib.request.urlopen(req) as response:
             bib = response.read().decode().strip()
-            
-            # Modify BibTeX to mark preprints and book chapters
-            if work_type == "preprint":
-                if bib.endswith('}'):
-                    # Find journal field and replace with "preprint"
-                    lines = bib.split('\n')
-                    new_lines = []
-                    journal_found = False
-                    
-                    for line in lines:
-                        if line.startswith('  journal = '):
-                            # Replace with preprint marker
-                            new_lines.append('  journal = {Preprint},')
-                            journal_found = True
-                        else:
-                            new_lines.append(line)
-                    
-                    bib = '\n'.join(new_lines)
-            elif work_type == "book-chapter":
-                if bib.endswith('}'):
-                    # Find journal field and replace with "Book Chapter"
-                    lines = bib.split('\n')
-                    new_lines = []
-                    journal_found = False
-                    
-                    for line in lines:
-                        if line.startswith('  journal = '):
-                            # Replace with book chapter marker  
-                            new_lines.append('  journal = {Book Chapter},')
-                            journal_found = True
-                        else:
-                            new_lines.append(line)
-                    
-                    bib = '\n'.join(new_lines)
-            
-            # Inject badges before the closing brace
+
+            # Modify BibTeX to mark preprints and book chapters, and add badges
             if bib.endswith('}'):
-                bib = bib[:-1] + ',\n  altmetric={true},\n  dimensions={true}\n}'
+                # Remove the closing brace
+                bib = bib[:-1].rstrip()
+
+                # Add note field for preprints and book chapters
+                if work_type == "preprint":
+                    bib += ',\n  note = {Preprint}'
+                elif work_type == "book-chapter":
+                    bib += ',\n  note = {Book Chapter}'
+
+                # Add badges
+                bib += ',\n  altmetric={true},\n  dimensions={true}\n}'
             bibtex_entries.append(bib)
         print(f"Fetched bib for DOI: {doi} (type: {work_type})")
     except Exception as e:
