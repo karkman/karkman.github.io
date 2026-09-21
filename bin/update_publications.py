@@ -13,8 +13,10 @@ req = urllib.request.Request(url, headers={"Accept": "application/json"})
 with urllib.request.urlopen(req) as response:
     data = json.loads(response.read().decode())
 
-# Collect DOI and work type information from the main ORCID data
-dois_and_types = []
+# Collect unique DOI and work type information from the main ORCID data
+doi_to_type = {}  # Map DOI to work type to avoid duplicates
+doi_to_title = {}
+
 for group in data.get('group', []):
     for work in group.get('work-summary', []):
         work_type = work.get('type')
@@ -27,22 +29,20 @@ for group in data.get('group', []):
                 break
         
         if doi:  # Only include works that have DOI
-            dois_and_types.append({
-                'doi': doi,
-                'type': work_type,
-                'title': work.get('title', {}).get('title', {}).get('value', 'No title')
-            })
+            # Only store the first occurrence of each DOI to avoid duplicates
+            if doi not in doi_to_type:
+                doi_to_type[doi] = work_type
+                title = work.get('title', {}).get('title', {}).get('value', 'No title')
+                doi_to_title[doi] = title
 
-print(f"Found {len(dois_and_types)} works with DOIs")
-preprints = [w for w in dois_and_types if w['type'] == 'preprint']
-book_chapters = [w for w in dois_and_types if w['type'] == 'book-chapter']
+print(f"Found {len(doi_to_type)} unique works with DOIs")
+preprints = [doi for doi, type_ in doi_to_type.items() if type_ == 'preprint']
+book_chapters = [doi for doi, type_ in doi_to_type.items() if type_ == 'book-chapter']
 print(f"Found {len(preprints)} preprints and {len(book_chapters)} book chapters")
 
 bibtex_entries = []
-for i, item in enumerate(dois_and_types):
-    doi = item['doi']
-    work_type = item['type']
-    title = item['title']
+for doi, work_type in doi_to_type.items():
+    title = doi_to_title[doi]
     
     try:
         req = urllib.request.Request(f"https://api.crossref.org/works/{doi}/transform/application/x-bibtex")
